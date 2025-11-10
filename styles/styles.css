@@ -1,0 +1,562 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Barlow', sans-serif;
+}
+
+/* ----------------- HEADER ---------------- */
+
+header {
+    padding: 0 24px;
+    margin-top: 23px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 1s;
+}
+
+header button {
+    padding: 11px 14.5px 13.5px;
+    background: #E8EFF2;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 26px;
+    color: #162542;
+    border: none;
+    transition: 0.7s;
+}
+
+header button:hover {
+    background: #162542;
+    cursor: pointer;
+    transition: 0.7s;
+    color: white;
+}
+
+/* ----------------- MAIN ---------------- */
+
+
+main {
+    margin-top: 58px;
+    transition: 1s;
+}
+
+.intro {
+    padding-left: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 64px;
+    box-sizing: border-box;
+    transition: 1s;
+}
+
+.intro_info_heading {
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 48px;
+    color: #162542;
+    max-width: 10ch;
+    transition: 1s;
+}
+
+.intro_info_paragraph {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    color: #7B8BAD;
+    margin-top: 32px;
+    max-width: 36ch;
+    transition: 1s;
+}
+
+.intro_last {
+    margin-top: 32px;
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    transition: 1s;
+}
+
+.intro_button {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 26px;
+    color: white;
+    background: #F16718;
+    border-radius: 8px;
+    transition: 0.7s;
+    padding: 11px 14px;
+}
+
+.intro_button:hover {
+    cursor: pointer;
+    background: #FF9B62;
+    transition: 0.7s;
+}
+
+.intro_last_paragraph {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 26px;
+    color: #7B8BAD;
+    transition: 1s;
+}
+
+.intro_img {
+    width: 348px;
+    height: 331px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-image: url(../assets/mobile/image-keyboard.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-self: flex-end;
+    transition: 1s;
+}
+
+
+.middle {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 24px;
+    transition: 1s;
+}
+
+.middle_images {
+    display: flex;
+    transition: 1s;
+}
+
+.keybord_left {
+    width: 129px;
+    height: 192px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background: url(../assets/mobile/image-phone-and-keyboard.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    right: 45px; 
+    transition: 1s;
+}
+
+.keybord_left::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background: rgba(241, 103, 24, 0.7);
+    transition: 1s;
+}
+
+.keybord_right {
+    width: 220px;
+    height: 193px;
+    border-radius: 10px;
+    background-image: url(../assets/mobile/image-glass-and-keyboard.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: -21px;
+    transition: 1s;
+}
+
+.middle {
+    padding: 0 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 75px;
+    transition: 1s;
+}
+
+.middle_info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    transition: 1s;
+}
+
+.middle_info_heading {
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 36px;
+    text-align: center;
+    color: #162542;
+    max-width: 9ch;
+    text-transform: uppercase;
+    transition: 1s;
+}
+
+.middle_info_paragraph {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    color: #7B8BAD;
+    max-width: 34ch;
+    transition: 1s;
+}
+
+
+.last {
+    padding: 0 24px;
+    margin-top: 111px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 64px;
+    transition: 1s;
+}
+
+.last_section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 327px;
+    transition: 1s;
+}
+
+.last_section_img {
+    width: 65px;
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F16718;
+    border-radius: 16px;
+    transition: 1s;
+}
+
+.section_header {
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    color: #162542;
+    max-width: 12.9ch;
+    margin-top: 48px;
+    transition: 1s;
+}
+
+.section_paragraph {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    color: #7B8BAD;
+    max-width: 35ch;
+    margin-top: 24px;
+    transition: 1s;
+}
+
+
+
+/* --------------- FOOTER --------------- */
+
+footer {
+    padding: 96px 0 50px;
+    transition: 1s;
+}
+
+footer p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    color: #7B8BAD;
+    margin: auto;
+    max-width: 30ch;
+    transition: 1s;
+}
+
+footer span {
+    font-weight: 700;
+    transition: 1s;
+}
+
+
+
+/* --------------------- RESPONSIVE ---------------- */
+
+/* TABLET */
+
+@media (min-width: 768px)
+{
+    /* HEADER */
+
+    header {
+        margin-top: 49px;
+        padding: 0 39px;
+        transition: 1s;
+    }
+
+    header button {
+        width: 175px;
+        height: 58px;
+        transition: 1s;
+    }
+
+    /* MAIN */
+
+    main {
+        margin-top: 62px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transition: 1s;
+    }
+
+    .intro {
+        padding-left: 39px;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        transition: 1s;
+    }
+
+    .intro_info_paragraph {
+        margin-top: 34px;
+        transition: 1s;
+    }
+
+    .intro_last {
+        margin-top: 39px;
+        gap: 37px;
+        transition: 1s;
+    }
+
+    .intro_button {
+        padding: 16px 27px;
+        transition: 1s;
+    }
+
+    .intro_img {
+        background-image: url(../assets/tablet/image-keyboard.jpg);
+        width: 321px;
+        height: 425px;
+        transition: 1s;
+    }
+
+    .middle {
+        margin-top: 40px;
+        padding: 0 39px;
+        align-items: center;
+        gap: 72px;
+        transition: 1s;
+    }
+
+    .middle_images {
+        gap: 50.5px;
+        transition: 1s;
+    }
+
+    .keybord_left {
+        background-image: url(../assets/tablet/image-phone-and-keyboard.jpg);
+        width: 214px;
+        height: 320px;
+        border-radius: 20px;
+        position: relative;
+        right: 0;
+        transition: 1s;
+    }
+
+    .keybord_left::before {
+        border-radius: 20px;
+        transition: 1s;
+    }
+
+    .keybord_right {
+        background-image: url(../assets/tablet/image-glass-and-keyboard.jpg);
+        width: 445px;
+        height: 320px;
+        transition: 1s;
+    }
+
+    .middle_info {
+        flex-direction: row;
+        justify-content: space-between;
+        max-width: 689px;
+        transition: 1s;
+    }
+
+    .middle_info_heading, .middle_info_paragraph {
+        text-align: left;
+        transition: 1s;
+    }
+
+    .middle_info_paragraph {
+        max-width: 43ch;
+        transition: 1s;
+    }
+
+    .last {
+        max-width: 768px;
+        margin-top: 142px;
+        transition: 1s;
+    }
+
+    .last_section {
+        align-items: flex-start;
+        transition: 1s;
+    }
+
+    .section_header, .section_paragraph {
+        text-align: left;
+        transition: 1s;
+    }
+
+    .section_header {
+        max-width: 13ch;
+        margin-top: 40px;
+        transition: 1s;
+    }
+
+    /* FOOTER */
+
+    footer {
+        padding: 142px 0 43px;
+        transition: 1s;
+    }
+}
+
+/* DESKTOP */
+
+@media (min-width: 1440px) {
+
+    body {
+        background-image: url(../assets/shared/pattern-square.svg), url(../assets/shared/pattern-square.svg);
+        background-size: 255px 236px;
+        background-position: top 205px right -135px, top 970px left -135px;
+        background-repeat: no-repeat, no-repeat;
+    }
+
+    /* HEADER */
+
+    header {
+        max-width: 1110px;
+        margin: 64px auto 0;
+        padding: 0;
+        transition: 1s;
+    }
+
+    /* MAIN */
+    
+    main {
+        margin-top: 83px;
+        transition: 1s;
+    }
+
+    .intro {
+        width: auto;
+        gap: 125px;
+        padding: 0;
+        width: 1110px;
+        transition: 1s;
+    }
+
+    .intro_info_heading {
+        font-weight: 900;
+        font-size: 56px;
+        line-height: 56px;
+        transition: 1s;
+    }
+
+    .intro_info_paragraph {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 26px;
+        margin-top: 24px;
+        transition: 1s;
+    }
+
+    .intro_last {
+        margin-top: 40px;
+        gap: 40px;
+        transition: 1s;
+    }
+
+    .intro_img {
+        width: 540px;
+        height: 480px;
+        background-image: url(../assets/desktop/image-keyboard.jpg);
+        border-radius: 20px;
+        transition: 1s;
+    }
+
+    .middle {
+        flex-direction: row;
+        gap: 125px;
+        transition: 1s;
+    }
+
+    .keybord_left {
+        width: 255px;
+        height: 480px;
+        background-image: url(../assets/desktop/image-phone-and-keyboard.jpg);
+        transition: 1s;
+    }
+
+    .keybord_right {
+        width: 445px;
+        height: 480px;
+        background-image: url(../assets/desktop/image-glass-and-keyboard.jpg);
+        transition: 1s;
+    }
+
+    .middle_info {
+        flex-direction: column;
+        align-items: self-start;
+        gap: 27px;
+        transition: 1s;
+    }
+
+    .middle_info_heading {
+        text-align: left;
+        transition: 1s;
+    }
+
+    .middle_info_paragraph {
+        text-align: left;
+        max-width: 29ch;
+        transition: 1s;
+    }
+
+    .last {
+        margin-top: 168px;
+        gap: 30px;
+        max-width: 1440px;
+        transition: 1s;
+    }
+
+    .section_header {
+        margin-top: 48px;
+        transition: 1s;
+    }
+
+    .section_paragraph {
+        max-width: 28ch;
+        transition: 1s;
+    }
+
+    /* FOOTER */
+
+    footer {
+        padding: 128px 0 39px;
+        transition: 1s;
+    }
+}
+
+
+
+
+
